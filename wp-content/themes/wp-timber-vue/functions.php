@@ -19,11 +19,16 @@ if ( file_exists( $composer_autoload ) ) {
 	$timber = new Timber\Timber();
 }
 
+require_once VENDORS_DIR . '/autoload.php';
+
 /** Add CLI commands */
-require_once( __DIR__ . '/app/cli.php');
+require_once __DIR__ . '/app/cli.php';
 
 /** Add REST Endpoints */
-require_once( __DIR__ . '/app/rest-api.php');
+require_once __DIR__ . '/app/rest-api.php';
+
+/** Add in mix function */
+require_once __DIR__ . '/mix.php';
 
 /**
  * This ensures that Timber is loaded and available as a PHP class.
@@ -71,8 +76,10 @@ class StarterSite extends Timber\Site {
 		add_filter( 'timber/twig', array( $this, 'add_to_twig' ) );
 		add_action( 'init', array( $this, 'register_post_types' ) );
 		add_action( 'init', array( $this, 'register_taxonomies' ) );
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_assets' ));
 		parent::__construct();
 	}
+
 	/** This is where you can register custom post types. */
 	public function register_post_types() {
 
@@ -80,6 +87,12 @@ class StarterSite extends Timber\Site {
 	/** This is where you can register custom taxonomies. */
 	public function register_taxonomies() {
 
+	}
+
+	/** This is were you can register styles and scripts */
+	public function enqueue_assets() {
+		wp_enqueue_style('app-css', mix('/css/app.css', ''), false, null);
+    wp_enqueue_script('app-js', mix('/js/app.js', ''), ['jquery'], null, true);
 	}
 
 	/** This is where you add some context

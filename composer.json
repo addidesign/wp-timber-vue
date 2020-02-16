@@ -22,7 +22,8 @@
         "wpackagist-plugin/simple-page-ordering": "*",
         "wpackagist-plugin/user-switching": "*",
         "wpackagist-plugin/classic-editor": "*",
-        "johnbillion/extended-cpts": "*"
+        "johnbillion/extended-cpts": "*",
+        "illuminate/support": "^6.15"
     },
     "extra": {
         "wordpress-install-dir": "wp"

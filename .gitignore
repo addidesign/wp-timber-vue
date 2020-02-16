@@ -43,12 +43,6 @@ Thumbs.db
 /wp-content/blogs.dir
 /wp-content/uploads/201*
 /wp-content/uploads/placeholders/site-placeholder-*
-/wp-content/uploads/sucuri
-/wp-content/uploads/placeholders
-/wp-content/uploads/backups
-/wp-content/uploads/gravity_forms
-/wp-content/uploads/wc-logs
-/wp-content/uploads/woocommerce_uploads
 /wp-content/uploads/
 /wp-content/upgrade/
 /wp-content/backup-db/
@@ -85,3 +79,5 @@ composer.lock
 .env
 node_modules
 yarn.lock
+package-lock.json
+wp-content/**/dist/

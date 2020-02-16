@@ -20,10 +20,10 @@ if ( file_exists( $composer_autoload ) ) {
 }
 
 /** Add CLI commands */
-include_once( __DIR__ . '/app/cli.php');
+require_once( __DIR__ . '/app/cli.php');
 
 /** Add REST Endpoints */
-include_once( __DIR__ . '/app/rest-api.php');
+require_once( __DIR__ . '/app/rest-api.php');
 
 /**
  * This ensures that Timber is loaded and available as a PHP class.

@@ -6,6 +6,7 @@ if (defined('WP_CLI') && WP_CLI) {
     {
         public function test_cli()
         {
+            // Check the CLI is setup - wp wptimbervue test_cli
             WP_CLI::success('CLI is working!');
         }
     }

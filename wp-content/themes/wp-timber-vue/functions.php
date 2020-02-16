@@ -19,6 +19,12 @@ if ( file_exists( $composer_autoload ) ) {
 	$timber = new Timber\Timber();
 }
 
+/** Add CLI commands */
+include_once( __DIR__ . '/app/cli.php');
+
+/** Add REST Endpoints */
+include_once( __DIR__ . '/app/rest-api.php');
+
 /**
  * This ensures that Timber is loaded and available as a PHP class.
  * If not, it gives an error message to help direct developers on where to activate

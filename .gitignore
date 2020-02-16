@@ -1,0 +1,87 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.iso
+*.jar
+*.rar
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+log
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+
+# Wordpress Media Files #
+#########################
+/wp
+/wp-content/plugins
+/wp-content/languages
+/wp-content/blogs.dir
+/wp-content/uploads/201*
+/wp-content/uploads/placeholders/site-placeholder-*
+/wp-content/uploads/sucuri
+/wp-content/uploads/placeholders
+/wp-content/uploads/backups
+/wp-content/uploads/gravity_forms
+/wp-content/uploads/wc-logs
+/wp-content/uploads/woocommerce_uploads
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/backup-db/
+/wp-content/advanced-cache.php
+/wp-content/wp-cache-config.php
+/wp-content/cache/
+/wp-content/backups/
+
+# WordPress media sycing plugin #
+#################################
+/wp-content/plugins/synv-dev-files
+/wp-content/uploads/sql-backups
+/wp-content/uploads/wp-sync-db
+
+# WordPress stuff #
+###################
+sitemap.xml
+sitemap.xml.gz
+readme.html
+license.txt
+*.log
+active-config.php
+
+# Composer #
+###################
+composer-test.json
+composer-test.lock
+composer.lock
+/vendor/
+
+
+# Build #
+###################
+.env
+node_modules
+yarn.lock

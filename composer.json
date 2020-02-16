@@ -1,0 +1,27 @@
+{
+    "name": "addidesign/wp-timber-vue",
+    "description": "WordPress starter theme with Timber, Vue, Tailwind and Laravel Mix",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Adam Ward",
+            "email": "adam@addidesign.com",
+            "homepage": "https://addidesign.com/"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "*",
+        "vlucas/phpdotenv": "*",
+        "wpackagist-plugin/timber-library": "*",
+        "wpackagist-plugin/simple-page-ordering": "*",
+        "wpackagist-plugin/user-switching": "*",
+        "wpackagist-plugin/classic-editor": "*",
+        "johnbillion/extended-cpts": "*"
+    }
+}

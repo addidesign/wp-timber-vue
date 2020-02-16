@@ -23,5 +23,8 @@
         "wpackagist-plugin/user-switching": "*",
         "wpackagist-plugin/classic-editor": "*",
         "johnbillion/extended-cpts": "*"
+    },
+    "extra": {
+        "wordpress-install-dir": "wp"
     }
 }

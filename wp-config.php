@@ -13,7 +13,10 @@ require_once realpath(WEB_DIR . '/config/set-env.php');
  * You can add conditional config definitions here using the 'WP_ENV'
  * i.e if (WP_ENV == 'dev') { define('SOME_API_KEY', 'key') }
  */
- 
+
+/** WP still requires the table prefix here */
+$table_prefix = 'wp_';
+
  /** Set wp-content to root path */
  define('CONTENT_DIR', '/wp-content');
  define('WP_CONTENT_DIR', dirname(__FILE__) . CONTENT_DIR);

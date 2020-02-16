@@ -17,7 +17,7 @@
     ],
     "require": {
         "johnpbloch/wordpress": "*",
-        "vlucas/phpdotenv": "*",
+        "vlucas/phpdotenv": "^3.6",
         "wpackagist-plugin/timber-library": "*",
         "wpackagist-plugin/simple-page-ordering": "*",
         "wpackagist-plugin/user-switching": "*",

@@ -21,6 +21,15 @@ $table_prefix = 'wp_';
  define('CONTENT_DIR', '/wp-content');
  define('WP_CONTENT_DIR', dirname(__FILE__) . CONTENT_DIR);
   
+if (isset($_SERVER['HTTP_HOST'])) {
+    $protocol = 'http';
+   // Change the protocol to HTTPS if available
+    if (isset($_SERVER['HTTPS'])) {
+        $protocol = 'https';
+    }
+    define('WP_CONTENT_URL', $protocol.'://' . $_SERVER['HTTP_HOST'] . CONTENT_DIR);
+};
+
  /** Absolute path to the WordPress directory. */
 if (!defined('ABSPATH')) {
     define('ABSPATH', dirname(__FILE__) . '/wp');

@@ -30,6 +30,13 @@ require_once __DIR__ . '/app/rest-api.php';
 /** Add in mix function */
 require_once __DIR__ . '/mix.php';
 
+/** Register CPTs */
+require_once __DIR__ . '/app/register-cpts.php';
+
+/** Register Taxonomies */
+require_once __DIR__ . '/app/register-taxonomies.php';
+
+
 /**
  * This ensures that Timber is loaded and available as a PHP class.
  * If not, it gives an error message to help direct developers on where to activate
@@ -95,7 +102,7 @@ class StarterSite extends Timber\Site
     {
         wp_enqueue_style('app-css', mix('/css/app.css', ''), false, null);
         wp_enqueue_script('app-js', mix('/js/app.js', ''), ['jquery'], null, true);
-        
+
         // Add localized script        
         wp_localize_script( 'app-js', 'site_info', array(
             'site_url' => home_url(),
